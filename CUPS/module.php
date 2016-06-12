@@ -36,7 +36,7 @@
 			
 		}
 
-                private function GetCUPS()
+                public function GetCUPS()
                 {
                         $this->IP_C = $this->ReadPropertyString("CURL_IP");
                         $this->IP_D = $this->ReadPropertyString("DRUCKER_IP");
