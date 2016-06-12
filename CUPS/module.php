@@ -33,7 +33,7 @@
                         $this->RegisterVariableBoolean("Drucker_ON", "Drucker Online");
                         $this->RegisterVariableInteger("Offene_AUF", "Offene_Aufträge");
 
-			$this->RegisterTimer("GetCUPS", 0, 'CUPS_GetCUPS($_IPS[\'TARGET\']);');
+			$this->RegisterTimer("GetCUPS", 30, 'CUPS_GetCUPS($_IPS[\'TARGET\']);');
 			$this->GetCUPS();
                       
 			
@@ -58,6 +58,10 @@
                         $ERG = intval(strtok(" "));
 
                         SetValue($this->GetIDForIdent("Offene_AUF"), $ERG);
+
+                        $PING = Sys_Ping($this->IP_D, 1000);
+                        SetValue($this->GetIDForIdent("Drucker_ON"), $PING);
+
 	
                 }
 
