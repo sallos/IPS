@@ -1,0 +1,14 @@
+{
+	"id": "{91a6ac3a-ac58-46a8-80d5-6b90f690ed41}",
+	"name": "CUPS",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"CUPS"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "CUPS"
+}

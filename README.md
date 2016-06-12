@@ -1,7 +1,4 @@
-Test PHP Modules for IP-Symcon
+PHP Modules for IP-Symcon
 ================
 
-* IOTest
-* IOSplitter
-* VariableAction
-* HomeMaticOverride
+* CUPS
