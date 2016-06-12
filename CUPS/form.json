@@ -2,6 +2,7 @@
 	"elements":
 	[
 		{ "name": "CURL_IP", "type": "ValidationTextBox", "caption": "CURL IP" },
-                { "name": "DRUCKER_IP", "type": "ValidationTextBox", "caption": "Drucker IP" }
+                { "name": "DRUCKER_IP", "type": "ValidationTextBox", "caption": "Drucker IP" },
+                { "name": "DRUCKER_NA", "type": "ValidationTextBox", "caption": "Drucker Name" }
 	]
 }
