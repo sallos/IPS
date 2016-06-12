@@ -32,6 +32,9 @@
 
                         $this->RegisterVariableBoolean("Drucker_ON", "Drucker Online");
                         $this->RegisterVariableInteger("Offene_AUF", "Offene_Aufträge");
+
+			$this->RegisterTimer("GetCUPS", 0, 'CUPS_GetCUPS($_IPS[\'TARGET\']);');
+			$this->GetCUPS();
                       
 			
 		}
@@ -58,10 +61,6 @@
 	
                 }
 
-                public function GetUpdate()
-                {
-
-                }
 
         }
 
