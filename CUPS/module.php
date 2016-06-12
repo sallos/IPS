@@ -1,6 +1,6 @@
 <?
 
-	class CURL extends IPSModule
+	class CUPS extends IPSModule
 	{
 
         var $IP_C;
