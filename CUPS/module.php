@@ -45,7 +45,7 @@
                         $this->IP_D = $this->ReadPropertyString("DRUCKER_IP");
                         $this->NAME = $this->ReadPropertyString("DRUCKER_NA");
 
-                        $URL = "http://" . $IP_C . ":631/printers/" . $NAME;
+                        $URL = "http://" . $this->IP_C . ":631/printers/" . $this->NAME;
 
                         $BUFFER = implode('', file($URL));
     
