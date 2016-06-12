@@ -55,8 +55,12 @@
                         $ERG = intval(strtok(" "));
 
                         SetValue($this->GetIDForIdent("Offene_AUF"), $ERG);
-
 	
+                }
+
+                public function GetUpdate()
+                {
+
                 }
 
         }
