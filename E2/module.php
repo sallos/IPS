@@ -1,5 +1,5 @@
 <?
-class E2-VTI extends IPSModule {
+class E2VTI extends IPSModule {
 
   public function Create() {
     parent::Create();
