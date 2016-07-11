@@ -14,8 +14,8 @@ class E2VTI extends IPSModule {
     $this->EnableAction("STATE");
     $serviceNameId = $this->RegisterVariableString("SERVICE_NAME", "Servicename", "", 3);
     $serviceReferenceId = $this->RegisterVariableString("SERVICE_REFERENCE", "Servicereferenz", "", 4);
-	$volumeid = $this->RegisterVariableInteger("VOLUME", "Lautstärke", "~Intensity.100",0);
-    $this->RegisterTimer('INTERVAL', $this->ReadPropertyInteger('UpdateInterval'), 'E2_RequestData($id)');
+	//$volumeid = $this->RegisterVariableInteger("VOLUME", "Lautstärke", "~Intensity.100",0);
+    $this->RegisterTimer('INTERVAL', $this->ReadPropertyInteger('UpdateInterval'), 'E2VTI_RequestData($id)');
   }
 
   protected function CleanVariablesOnInactive() {
@@ -95,13 +95,13 @@ class E2VTI extends IPSModule {
     }
   }
   
-  public function ReadVol() {
-	$voldata = $this->request('/web/vol');
-	if ($voldata) { 
-		$vol = intval($voldata->e2current);
-		SetValueInterger($this->GetIDForIdent('VOLUME'),$vol);
-	}
-  }
+  //public function ReadVol() {
+//	$voldata = $this->request('/web/vol');
+//	if ($voldata) { 
+//		$vol = intval($voldata->e2current);
+//		SetValueInterger($this->GetIDForIdent('VOLUME'),$vol);
+//	}
+//  }
 		
 
   public function Request($path) {
