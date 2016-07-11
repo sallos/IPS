@@ -15,6 +15,7 @@ class E2VTI extends IPSModule {
     $serviceNameId = $this->RegisterVariableString("SERVICE_NAME", "Servicename", "", 3);
     $serviceReferenceId = $this->RegisterVariableString("SERVICE_REFERENCE", "Servicereferenz", "", 4);
 	$volumeid = $this->RegisterVariableInteger("VOLUME", "Lautstärke", "~Intensity.100",0);
+	$this->EnableAction("VOLUME");
     $this->RegisterTimer('INTERVAL', $this->ReadPropertyInteger('UpdateInterval'), 'E2VTI_RequestData($id)');
   }
 
