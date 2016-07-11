@@ -99,7 +99,7 @@ class E2VTI extends IPSModule {
 	$voldata = $this->request('/web/vol');
 	if ($voldata) { 
 		$vol = intval($voldata->e2current);
-		SetValueInterger($this->GetIDForIdent('VOLUME'),$vol);
+		SetValueInteger($this->GetIDForIdent('VOLUME'),$vol);
 	}
   }
 		
