@@ -30,6 +30,9 @@ class E2VTI extends IPSModule {
          $value = $value == 1;
          $this->SetState($value);
          break;
+	  case 'VOLUME':
+         $this->SetVol($value);
+         break;
     }
   }
 
@@ -171,6 +174,10 @@ class E2VTI extends IPSModule {
 
   public function SetPowerState($id) {
     return $this->request("/web/powerstate?newstate=$id");
+  }
+  
+  public function SetVol($vol) {
+    return $this->request("/web/vol?set=set$vol");
   }
 
   public function Zap($reference) {
