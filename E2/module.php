@@ -1,5 +1,5 @@
 <?
-class E2 extends IPSModule {
+class E2VTI extends IPSModule {
 
   public function Create() {
     parent::Create();
@@ -15,7 +15,7 @@ class E2 extends IPSModule {
     $serviceNameId = $this->RegisterVariableString("SERVICE_NAME", "Servicename", "", 3);
     $serviceReferenceId = $this->RegisterVariableString("SERVICE_REFERENCE", "Servicereferenz", "", 4);
 	//$volumeid = $this->RegisterVariableInteger("VOLUME", "Lautstärke", "~Intensity.100",0);
-    $this->RegisterTimer('INTERVAL', $this->ReadPropertyInteger('UpdateInterval'), 'E2_RequestData($id)');
+    $this->RegisterTimer('INTERVAL', $this->ReadPropertyInteger('UpdateInterval'), 'E2VTI_RequestData($id)');
   }
 
   protected function CleanVariablesOnInactive() {

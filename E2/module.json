@@ -1,11 +1,11 @@
 {
   "id": "{54e5049c-e801-448b-b997-d383f7d96b31}",
-  "name": "E2",
+  "name": "E2VTI",
   "type": 3,
   "vendor": "Enimga2 VTI",
   "aliases": [ "Enigma2 PVR VTI" ],
   "parentRequirements": [],
   "childRequirements": [],
   "implemented": [],
-  "prefix": "E2"
+  "prefix": "E2VTI"
 }
