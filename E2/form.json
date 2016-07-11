@@ -1,0 +1,22 @@
+{
+  "elements": [
+    { "name": "Host", "type": "ValidationTextBox", "caption": "Host" },
+    { "name": "UpdateInterval", "type": "IntervalBox", "caption": "Sekunden" }
+  ],
+  "actions": [
+    { "type": "Button", "label": "Einschalten", "onClick": "E2_PowerOn($id);" },
+    { "type": "Button", "label": "Standby", "onClick": "E2_Standby($id);" },
+    { "type": "Button", "label": "Ausschalten", "onClick": "E2_PowerOff($id);" },
+    { "type": "Button", "label": "Reboot", "onClick": "E2_Reboot($id);" },
+    { "type": "Button", "label": "Restart GUI", "onClick": "E2_RestartGUI($id);" },
+    { "type": "Button", "label": "Status abgleichen", "onClick": "print_r(E2_RequestData($id));" }
+  ],
+  "status": [
+    { "code": 101, "icon": "inactive", "caption": "Instanz wird erstellt" },
+    { "code": 102, "icon": "active", "caption": "Instanz ist aktiv" },
+    { "code": 103, "icon": "inactive", "caption": "Instanz wird gelöscht" },
+    { "code": 104, "icon": "inactive", "caption": "Instanz ist inaktiv" },
+    { "code": 201, "icon": "error", "caption": "Instanz konnte keine Verbidnung aufbauen" },
+    { "code": 202, "icon": "error", "caption": "Instanz hat einen unbekannten Fehler erhalten" }
+  ]
+}
