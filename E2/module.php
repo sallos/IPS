@@ -1,5 +1,5 @@
 <?
-class E2 extends IPSModule {
+class E2-VTI extends IPSModule {
 
   public function Create() {
     parent::Create();
@@ -97,7 +97,7 @@ class E2 extends IPSModule {
   
   public function ReadVol() {
 	$voldata = $this->request('/web/vol');
-	if ($serviceData) { 
+	if ($voldata) { 
 		$vol = intval($voldata->e2current);
 		SetValueInterger($this->GetIDForIdent('VOLUME'),$vol);
 	}
