@@ -1,0 +1,16 @@
+{
+  "translations": {
+    "de": {
+      "Settings": "Einstellungen",
+      "Paring Mode:": "Paring Modus:",
+      "Activate Pairing Mode": "Aktiviere Paring Modus",
+      "Deactivate Pairing Mode": "Deaktiviere Paring Modus",
+      "Unknown": "Unbekannt",
+      "Paring active": "Paring aktiv",
+      "Paring inactive": "Paring inaktiv",
+      "Unkwnon Status Code": "Unbekannter Status Code",
+      "Zigbee Devices": "Zigbee Geräte",
+      "Reload Device List": "Aktualisiere Geräteliste"
+    }
+  }
+}

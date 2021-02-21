@@ -1,0 +1,21 @@
+{
+    "id": "{D5C0D7CE-6A00-BDBE-C43E-678CF5CBE178}",
+    "name": "Zigbee2TasmotaConnect",
+    "type": 2,
+    "vendor": "",
+    "aliases": ["Zigbee2Tasmota Connect"],
+    "parentRequirements": [
+        "{043EA491-0325-4ADD-8FC2-A30C8EEB4D3F}",
+        "{97475B04-67C3-A74D-C970-E9409B0EFA1D}"
+    ],
+    "childRequirements": [
+        "{EAC09CF4-0E77-C618-5C72-019417AE3CC8}"
+    ],
+    "implemented": [
+        "{91D0FFCD-72C7-EDD1-8525-4348DAD309BA}",
+        "{7F7632D9-FA40-4F38-8DEA-C83CD4325A32}",
+        "{DBDA9DF7-5D04-F49D-370A-2B9153D00D9B}"
+    ],
+    "prefix": "Z2T",
+    "url": ""
+}
